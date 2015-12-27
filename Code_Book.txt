@@ -1,0 +1,120 @@
+
+
+Activity				the activity name: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING,  LAYING 
+Subject					Each value identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+tBodyAcc.mean...X			See below description
+tBodyAcc.mean...Y			See below description
+tBodyAcc.mean...Z			See below description
+tGravityAcc.mean...X			See below description
+tGravityAcc.mean...Y			See below description
+tGravityAcc.mean...Z			See below description
+tBodyAccJerk.mean...X			See below description
+tBodyAccJerk.mean...Y			See below description
+tBodyAccJerk.mean...Z			See below description
+tBodyGyro.mean...X			See below description
+tBodyGyro.mean...Y			See below description
+tBodyGyro.mean...Z			See below description
+tBodyGyroJerk.mean...X			See below description
+tBodyGyroJerk.mean...Y			See below description
+tBodyGyroJerk.mean...Z			See below description
+tBodyAccMag.mean..			See below description
+tGravityAccMag.mean..			See below description
+tBodyAccJerkMag.mean..			See below description
+tBodyGyroMag.mean..			See below description
+tBodyGyroJerkMag.mean..			See below description
+fBodyAcc.mean...X			See below description
+fBodyAcc.mean...Y			See below description
+fBodyAcc.mean...Z			See below description
+fBodyAcc.meanFreq...X			See below description
+fBodyAcc.meanFreq...Y			See below description
+fBodyAcc.meanFreq...Z			See below description
+fBodyAccJerk.mean...X			See below description
+fBodyAccJerk.mean...Y			See below description
+fBodyAccJerk.mean...Z			See below description
+fBodyAccJerk.meanFreq...X			See below description
+fBodyAccJerk.meanFreq...Y			See below description
+fBodyAccJerk.meanFreq...Z			See below description
+fBodyGyro.mean...X			See below description
+fBodyGyro.mean...Y			See below description
+fBodyGyro.mean...Z			See below description
+fBodyGyro.meanFreq...X			See below description
+fBodyGyro.meanFreq...Y			See below description
+fBodyGyro.meanFreq...Z			See below description
+fBodyAccMag.mean..			See below description
+fBodyAccMag.meanFreq..			See below description
+fBodyBodyAccJerkMag.mean..			See below description
+fBodyBodyAccJerkMag.meanFreq..			See below description
+fBodyBodyGyroMag.mean..			See below description
+fBodyBodyGyroMag.meanFreq..			See below description
+fBodyBodyGyroJerkMag.mean..			See below description
+fBodyBodyGyroJerkMag.meanFreq..			See below description
+tBodyAcc.std...X			See below description
+tBodyAcc.std...Y			See below description
+tBodyAcc.std...Z			See below description
+tGravityAcc.std...X			See below description
+tGravityAcc.std...Y			See below description
+tGravityAcc.std...Z			See below description
+tBodyAccJerk.std...X			See below description
+tBodyAccJerk.std...Y			See below description
+tBodyAccJerk.std...Z			See below description
+tBodyGyro.std...X			See below description
+tBodyGyro.std...Y			See below description
+tBodyGyro.std...Z			See below description
+tBodyGyroJerk.std...X			See below description
+tBodyGyroJerk.std...Y			See below description
+tBodyGyroJerk.std...Z			See below description
+tBodyAccMag.std..			See below description
+tGravityAccMag.std..			See below description
+tBodyAccJerkMag.std..			See below description
+tBodyGyroMag.std..			See below description
+tBodyGyroJerkMag.std..			See below description
+fBodyAcc.std...X			See below description
+fBodyAcc.std...Y			See below description
+fBodyAcc.std...Z			See below description
+fBodyAccJerk.std...X			See below description
+fBodyAccJerk.std...Y			See below description
+fBodyAccJerk.std...Z			See below description
+fBodyGyro.std...X			See below description
+fBodyGyro.std...Y			See below description
+fBodyGyro.std...Z			See below description
+fBodyAccMag.std..			See below description
+fBodyBodyAccJerkMag.std..			See below description
+fBodyBodyGyroMag.std..			See below description
+fBodyBodyGyroJerkMag.std..			See below description
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+mean(): Mean value
+std(): Standard deviation
